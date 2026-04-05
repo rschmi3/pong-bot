@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Nix build results
+result
+result-*
+
+# Local environment / venvs
+.direnv/
+.venv/
+.venv-training/
+
+# Data — images, labels, split dirs, and checkpoints are large binary files
+# managed separately (rsync/scp). JSONL files are small and tracked.
+# Structure: data/{N}_elastics/{images,labels,train,valid,test,checkpoints}/
+data/*/images/
+data/*/labels/
+data/*/train/
+data/*/valid/
+data/*/test/
+data/*/checkpoints/
+data/*/cv_debug/
+data/*/plots/
+data/*/.roboflow.json
+data/*/.roboflow_manifest.json
+# Trained model outputs — large files, not tracked
+/models/
+*.onnx
+
+# Editor / OS
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Logs and temp files
+*.log
+*.tmp

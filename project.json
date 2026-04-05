@@ -1,0 +1,12 @@
+{
+  "pong-pi": {
+    "description": "Pong-Bot - motor control, computer vision, and RL pipeline",
+    "type": 1,
+    "flake": "git+ssh://git@github.com/rschmi3/pong-bot",
+    "checkinterval": 300,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "emailoverride": "",
+    "keepnr": 3
+  }
+}
